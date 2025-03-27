@@ -12,7 +12,7 @@ def sair():
 
 janela = Tk()
 janela.title("Gerenciador de Energia")
-janela.configure(bg='light grey')
+janela.configure(bg='#975701')
 
 largura_janela = 200
 altura_janela = 200
@@ -25,8 +25,8 @@ pos_y = (altura_tela - altura_janela) // 2
 
 janela.geometry(f"{largura_janela}x{altura_janela}+{pos_x}+{pos_y}")
 
-Button(janela, text='Desligar', command=desligar, padx=10, pady=5).place(x=65, y=20)
-Button(janela, text='Reiniciar', command=reiniciar, padx=10, pady=5).place(x=63, y=65)
-Button(janela, text='Sair', command=sair, padx=10, pady=5).place(x=72, y=110)
+Button(janela, text='Desligar', command=desligar, padx=10, pady=5, bg='#fdbd67').place(x=65, y=20)
+Button(janela, text='Reiniciar', command=reiniciar, padx=10, pady=5, bg='#fdbd67').place(x=64, y=65)
+Button(janela, text='Sair', command=sair, padx=10, pady=5, bg='#fdbd67').place(x=77, y=110)
 
 janela.mainloop()
